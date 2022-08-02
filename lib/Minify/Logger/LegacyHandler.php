@@ -17,7 +17,7 @@ class LegacyHandler extends AbstractProcessingHandler
         parent::__construct();
     }
 
-    protected function write(array $record)
+    protected function write(array $record) :void
     {
         $this->obj->log((string)$record['formatted']);
     }
